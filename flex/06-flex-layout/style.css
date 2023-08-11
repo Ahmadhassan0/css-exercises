@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
 body {
   height: 100vh;
-  margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
 }
@@ -16,6 +22,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 0.4rem 0.7rem;
 }
 
 input {
@@ -24,4 +31,61 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a {
+  color: black;
+}
+
+/* =================================================
+-----------------------Navbar-----------------------
+===================================================*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header .left-links {
+  height: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.header .right-links {
+  display: flex;
+  gap: 1rem;
+}
+
+
+/* =================================================
+-----------------------Content----------------------
+===================================================*/
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 86vh;
+}
+
+
+/* =================================================
+-----------------------Footer----------------------
+===================================================*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #eeeeee;
+}
+
+.footer .left-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .right-links {
+  display: flex;
+  gap: 1rem;
 }
